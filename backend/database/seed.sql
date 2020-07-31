@@ -12,5 +12,5 @@ CREATE TABLE users (
 CREATE TABLE todos (
     id SERIAL PRIMARY KEY 
     user_id REFERENCES users(id),
-    text VARCHAR NOT NULL,
+    todo VARCHAR NOT NULL,
 )
